@@ -29,3 +29,11 @@
 	body.is-preload #banner:after {
 		opacity: 0;
 	}
+
+/* Keep section navigation available when JavaScript is disabled. */
+#menu:target {
+	transform: translateX(0);
+}
+#menu:target ul > li > a {
+	visibility: visible;
+}

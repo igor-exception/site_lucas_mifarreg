@@ -1,0 +1,114 @@
+/* Professional adaptation of Spectral. Original styles and license retained. */
+:root { --ink: #192d38; --deep: #142630; --green: #25534f; --accent: #bce5d8; --muted: #d0dcdf; }
+body { background: var(--deep); color: #f4f6f5; font-family: "Segoe UI", Arial, sans-serif; letter-spacing: .015em; }
+h1, h2, h3 { text-transform: none; letter-spacing: -.025em; font-weight: 600; }
+h2 { font-size: clamp(1.8rem, 3.1vw, 2.7rem); line-height: 1.2; }
+h3 { font-size: 1.35rem; }
+p { line-height: 1.8; }
+a:focus-visible, button:focus-visible { outline: 3px solid var(--accent) !important; outline-offset: 5px; }
+section[id] { scroll-margin-top: 5rem; }
+body.landing #page-wrapper { background: var(--deep); }
+.wrapper { padding: 6rem 0 4rem; }
+.wrapper > .inner { width: min(1120px, calc(100% - 6rem)); }
+.wrapper.style1 { background: var(--green); color: #f4f6f5; }
+.wrapper.style2 { background: var(--ink); }
+.wrapper header.major p { color: var(--muted); max-width: 44rem; }
+header.major { margin-bottom: 2.7rem; }
+header.major h2 { border: 0; padding: 0; margin-bottom: 1.3rem; }
+.eyebrow, #banner p.eyebrow { color: var(--accent); text-transform: uppercase; letter-spacing: .16em; font-size: .72rem; font-weight: 600; margin-bottom: 1.6rem; }
+.split { display: grid; grid-template-columns: 1fr 1.35fr; gap: 5rem; }
+#header, #header.alt { background: rgba(20, 38, 48, .96); height: 4rem; line-height: 4rem; }
+#header .brand { position: absolute; left: 2rem; border: 0; font-size: 1.5rem; font-weight: 700; letter-spacing: -.08em; }
+.brand span { color: var(--accent); }
+#header nav > ul > li.language-switch { display: inline-flex; align-items: center; gap: .6rem; }
+#header nav > ul > li.language-switch a { display: inline-block; padding: 0 .3rem; letter-spacing: .06em; font-size: .75rem; line-height: 2.5rem; }
+.language-switch span { color: #92a5ad; font-size: .65rem; }
+.language-switch a[aria-current] { color: var(--accent) !important; box-shadow: inset 0 -2px var(--accent); }
+#header nav > ul > li > a.menuToggle { padding: 0 2rem; }
+#header nav > ul > li > a.menuToggle:after { height: 4rem; width: 1.5rem; margin-left: .7rem; }
+#menu { background: var(--green); }
+#menu .close { width: 3.5rem; height: 3.5rem; }
+#menu ul > li > a { letter-spacing: .07em; }
+body.landing #banner, body.is-mobile.landing #banner {
+ background-image: linear-gradient(90deg, rgba(12, 28, 39, .94) 0%, rgba(12, 28, 39, .80) 34%, rgba(12, 28, 39, .12) 72%), url("../../images/hero-lucas-london.png");
+ background-size: cover; background-position: 65% center; background-attachment: scroll;
+}
+#banner { height: auto; min-height: max(760px, 92vh); padding: 9rem 0 6rem; text-align: left; }
+#banner .inner { width: min(1240px, calc(100% - 6rem)); margin: auto; }
+#banner h1 { font-size: clamp(2.7rem, 4.7vw, 4.8rem); line-height: 1.06; margin: 0 0 1.6rem; max-width: 42rem; }
+#banner p { text-transform: none; letter-spacing: 0; }
+#banner .hero-statement { font-size: 1.4rem; line-height: 1.5; max-width: 30rem; margin-bottom: 1rem; }
+#banner .hero-description { max-width: 28rem; font-size: 1rem; color: #e0e8eb; }
+#banner .hero-languages { font-size: .8rem; letter-spacing: .08em; color: var(--accent); margin: 2rem 0; }
+#banner:after { display: none; }
+.button, button { font-family: inherit; letter-spacing: .07em; font-size: .7rem; height: auto; min-height: 3rem; line-height: 1.5; padding: 1rem 1.5rem; white-space: normal; }
+.button.primary { background: var(--accent); color: var(--deep); box-shadow: none; }
+.button.primary:hover { background: #d2f1e6; }
+.career { display: grid; grid-template-columns: 1fr 1.65fr; gap: 4rem; border-top: 1px solid #ffffff26; padding: 2.6rem 0 1rem; }
+.career h3 { font-size: 1.8rem; margin: .4rem 0; }
+.period, .role { color: var(--muted); font-size: .85rem; }
+.career .period { margin-bottom: 1rem; }
+.career li { padding-left: .4rem; margin-bottom: .65rem; color: var(--muted); }
+.international.wrapper { background: var(--deep); }
+.stats { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 3rem; }
+.stats > div { border-left: 2px solid var(--accent); padding-left: 1.5rem; }
+.stats strong { display: block; font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 400; line-height: 1.4; }
+.stats span { color: var(--muted); }
+.travel-photo { margin: 0 0 2.5rem; }
+.travel-photo img { display: block; width: 100%; height: auto; }
+.travel-photo figcaption { font-size: .75rem; color: var(--muted); margin-top: .7rem; }
+.travel-story { display: grid; grid-template-columns: 1fr 1.3fr; gap: 3rem; }
+.travel-story h3 { line-height: 1.7; }
+.travel-story p { color: var(--muted); }
+.language-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+.language-grid article { border-top: 1px solid #ffffff40; padding-top: 1.5rem; }
+.language-code { font-size: .75rem; letter-spacing: .1em; color: var(--accent); }
+.language-grid h3 { margin: 1rem 0 .5rem; }
+.language-grid p { color: #e0e8eb; }
+.resume-downloads > div { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1rem 0; border-bottom: 1px solid #ffffff26; }
+.resume-downloads button:disabled { opacity: 1; color: #c5d2d6; box-shadow: inset 0 0 0 1px #ffffff40; cursor: not-allowed; }
+.note { font-size: .85rem; color: var(--muted); margin-top: 1.2rem; }
+.contact-pending { display: inline-block; padding: .7rem 1.3rem; border: 1px solid #ffffff40; }
+body.landing #footer { background: #10212a; padding: 3rem 1.5rem; }
+#footer .copyright { color: #b8c9d1; letter-spacing: .08em; line-height: 2; margin: 2rem 0 0; }
+.back-top { font-size: .85rem; }
+.skip-link { position: fixed; top: -5rem; left: 1rem; z-index: 10002; padding: .7rem 1rem; background: var(--deep); }
+.skip-link:focus { top: .5rem; }
+@media (max-width: 980px) {
+ .split, .career { gap: 2.5rem; }
+ #banner { min-height: 720px; }
+ #banner .hero-description { max-width: 24rem; }
+ #banner h1 { max-width: 33rem; }
+}
+@media (max-width: 736px) {
+ .wrapper { padding: 4rem 0 2rem; }
+ .wrapper > .inner, #banner .inner { width: calc(100% - 3rem); }
+ .split, .career, .travel-story { grid-template-columns: 1fr; gap: .5rem; }
+ #header .brand { left: 1.5rem; }
+ #header nav > ul > li > a.menuToggle { padding: 0 1.2rem; }
+ #banner { padding: 25rem 0 3rem; min-height: 0; }
+ body.landing #banner, body.is-mobile.landing #banner {
+  background-image: linear-gradient(0deg, #142630 5%, rgba(20,38,48,.97) 35%, rgba(20,38,48,.05) 80%), url("../../images/hero-lucas-london.png");
+  background-position: center, 74% top; background-size: cover, auto 33rem; background-repeat: no-repeat; background-color: var(--deep);
+ }
+ #banner h1 { font-size: clamp(2.25rem, 8vw, 3.6rem); }
+ #banner h1 br { display: block; }
+ #banner .hero-statement { font-size: 1.2rem; }
+ #banner .hero-description { max-width: none; }
+ #banner p.eyebrow { max-width: 20rem; font-size: .66rem; }
+ #banner .actions { flex-direction: column; gap: .75rem; margin-left: 0; }
+ #banner .actions li { padding: 0; width: 100%; }
+ #banner .actions .button { display: block; }
+ .stats { gap: 1rem; }
+ .stats > div { padding-left: 1rem; }
+ .stats strong { font-size: 2rem; }
+ .stats span { font-size: .85rem; }
+ .language-grid { gap: 1rem; }
+ .language-grid h3 { font-size: 1.1rem; }
+ .language-grid p { font-size: .85rem; }
+ header.major { margin-bottom: 1.5rem; }
+}
+@media (max-width: 360px) { .language-grid { grid-template-columns: 1fr; } }
+@media (prefers-reduced-motion: reduce) {
+ *, *:before, *:after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}

@@ -1,0 +1,19 @@
+# GitHub Pages: publish the site, excluding working material and unapproved PDFs.
+# Use the standard Jekyll build (Deploy from a branch); do not add .nojekyll.
+exclude:
+  - AGENTS.md
+  - CONTEXTO-LUCAS.md
+  - REVISAO.md
+  - scripts
+  - html5up-spectral
+  - generic.html
+  - elements.html
+  - README.txt
+  - "Currículo - Lucas Alvarenga Mifarreg.pdf"
+  - "ENGLISH LUCAS ALVARENGA MIFARREG.pdf"
+  - hero.png
+  - original-78687DFA-85C4-4D4E-8C8A-8848AC214294.jpeg
+  - original-A3EBD0E4-F5A5-48D7-B53B-DB0B888A8E86.jpeg
+  - original-D6F65384-8A2A-491D-929A-302C807A252F.jpeg
+  - original-DDBF39D4-CB02-45D1-ACBB-3196860F6B9E.jpeg
+  - original-EC8A4030-807A-4E91-BB0F-7CE7491FD679.jpeg
