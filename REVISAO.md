@@ -7,7 +7,7 @@
 - Conteúdo baseado exclusivamente em `CONTEXTO-LUCAS.md`. Vivência no exterior não é apresentada como emprego no exterior.
 - Spectral preservado: CSS principal, bibliotecas, menu lateral e rolagem suave. Personalização concentrada em `assets/css/professional.css` e `assets/js/professional.js`.
 - Paleta azul escuro e verde, textos curtos, experiência em duas colunas no desktop e uma coluna no celular.
-- Foto de Londres como fundo do hero; enquadramento próprio no celular para preservar o rosto. A mesma fotografia aparece inteira na seção internacional, sem distorção.
+- Foto `hero-lucas-london_header.png` como fundo do hero; enquadramento próprio no celular para preservar o rosto. A seção internacional utiliza uma galeria de seis fotos diferentes, sem repetir as imagens do hero.
 - Menu acessível por teclado, Escape para fechar, foco contido no menu aberto, retorno do foco ao acionador e respeito à preferência de movimento reduzido.
 - Metadados, idioma do documento, alternância PT/EN/ES, um único H1 por página e links relativos compatíveis com subpastas.
 - Créditos HTML5 UP e licença preservados. Sem frameworks ou dependências novas.
@@ -24,8 +24,21 @@ Criados: `en/index.html`, `es/index.html`, `assets/css/professional.css`, `asset
 
 1. Aprovar versões finais dos currículos em português, inglês e espanhol, revisando os dados pessoais antes da publicação. Há PDFs de referência na raiz, mas não foram tratados como versões públicas finais. Os três botões estão desabilitados, com mensagens traduzidas e TODO no HTML; não existem links fictícios.
 2. Informar e aprovar expressamente os canais públicos de contato: e-mail, telefone e/ou LinkedIn. Nenhum foi inferido a partir dos PDFs.
-3. Identificar e aprovar as demais fotos antes de associá-las a Lisboa, Barcelona ou outros locais. O ponto de expansão da galeria está marcado no HTML.
-4. Confirmar o domínio final caso se desejem URLs canônicas e alternates absolutos para SEO. Os links atuais são relativos para permitir revisão local e publicação em qualquer subpasta.
+3. Confirmar o domínio final caso se desejem URLs canônicas e alternates absolutos para SEO. Os links atuais são relativos para permitir revisão local e publicação em qualquer subpasta.
+
+## Atualização da galeria internacional
+
+- Adicionada após a narrativa sobre Estados Unidos, Europa, Lisboa, Londres e Barcelona nas três versões.
+- Reino Unido: `Holborn_Bars.jpeg`, `Leadenhall_Market.jpeg`, `Palacio_de_Buckingham.jpeg`.
+- Portugal: `Torre_de_Belem.jpeg`, `Ascensor_da_Gloria.jpeg`.
+- Espanha: `Basílica_da_Sagrada_Família.jpeg`.
+- Nomes e arquivos originais preservados. Fotografias identificadas conforme o pedido do usuário; descrições fornecidas e traduzidas para EN/ES.
+- Grid com três colunas acima de 980px, duas até 980px e uma até 600px. Grupos com menos fotos não ampliam os cards restantes.
+- Todas as fotos usam proporção 4:5, `object-fit: cover` e `object-position: 50% 50%`. Não foi necessário ajustar posições individuais: a altura integral das fotos é preservada, com recorte lateral discreto nas originais quadradas.
+- ALT traduzido, carregamento lazy e links Maps fornecidos no pedido, com nova aba e `noopener noreferrer`.
+- Servidor de prévia ajustado para nomes Unicode e tipo MIME `.jpeg`.
+- Galeria testada em PT/EN/ES a 1920, 1366, 768, 390 e 320px: seis imagens carregadas, proporção 4:5, grid 3/2/1 e nenhum transbordamento horizontal ou erro JavaScript. Links Maps comparados integralmente com os seis URLs fornecidos; parâmetros e atributos de nova aba verificados. Revisão visual em desktop e celular.
+- As exclusões de imagens antigas e os logos novos já estavam no diretório antes deste trabalho e foram preservados.
 
 ## Visualizar localmente
 

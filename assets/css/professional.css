@@ -54,12 +54,25 @@ body.landing #banner, body.is-mobile.landing #banner {
 .stats > div { border-left: 2px solid var(--accent); padding-left: 1.5rem; }
 .stats strong { display: block; font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 400; line-height: 1.4; }
 .stats span { color: var(--muted); }
-.travel-photo { margin: 0 0 2.5rem; }
-.travel-photo img { display: block; width: 100%; height: auto; }
-.travel-photo figcaption { font-size: .75rem; color: var(--muted); margin-top: .7rem; }
 .travel-story { display: grid; grid-template-columns: 1fr 1.3fr; gap: 3rem; }
 .travel-story h3 { line-height: 1.7; }
 .travel-story p { color: var(--muted); }
+.international-gallery { margin-top: 2rem; }
+.gallery-note { color: var(--muted); font-size: .85rem; }
+.country-group { margin-top: 3rem; }
+.country-group > h3 { border-top: 1px solid #ffffff26; padding-top: 1.5rem; margin-bottom: 1.5rem; }
+.travel-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; }
+.travel-card { min-width: 0; display: flex; flex-direction: column; background: var(--ink); border: 1px solid #ffffff18; }
+/* A portrait frame retains the full height of the square and portrait originals. */
+.travel-card > img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 50%; }
+.travel-card-body { display: flex; flex-direction: column; flex: 1; padding: 1.4rem; }
+.travel-card h4 { font-size: 1.1rem; line-height: 1.4; font-weight: 600; letter-spacing: 0; text-transform: none; margin: 0 0 .6rem; }
+.travel-location { color: var(--accent); font-size: .78rem; margin-bottom: 1rem; }
+.travel-description { color: var(--muted); font-size: .88rem; line-height: 1.75; }
+.map-link { align-self: flex-start; margin-top: auto; padding: .5rem 0; font-size: .8rem; border-bottom: 1px solid #bce5d880; }
+.map-link:hover { color: var(--accent); }
+@media (max-width: 980px) { .travel-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px) { .travel-grid { grid-template-columns: minmax(0, 1fr); } }
 .language-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
 .language-grid article { border-top: 1px solid #ffffff40; padding-top: 1.5rem; }
 .language-code { font-size: .75rem; letter-spacing: .1em; color: var(--accent); }
