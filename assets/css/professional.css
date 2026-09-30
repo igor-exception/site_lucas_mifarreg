@@ -43,7 +43,10 @@ body.landing #banner, body.is-mobile.landing #banner {
 #banner:after { display: none; }
 .button, button { font-family: inherit; letter-spacing: .07em; font-size: .7rem; height: auto; min-height: 3rem; line-height: 1.5; padding: 1rem 1.5rem; white-space: normal; }
 .button.primary { background: var(--accent); color: var(--deep); box-shadow: none; }
-.button.primary:hover { background: #d2f1e6; }
+#banner .button.primary { background-color: var(--accent); color: var(--deep) !important; transition: background-color .2s ease, color .2s ease; }
+#banner .button.primary:hover { background-color: #d2f1e6 !important; color: var(--deep) !important; }
+#banner .button.primary:active { background-color: #a9d7c8 !important; color: var(--deep) !important; }
+#banner .button.primary:focus-visible { outline-color: #fff !important; outline-offset: 5px; }
 .career { display: grid; grid-template-columns: 1fr 1.65fr; gap: 4rem; border-top: 1px solid #ffffff26; padding: 2.6rem 0 1rem; }
 .career h3 { font-size: 1.8rem; margin: .4rem 0; }
 .period, .role { color: var(--muted); font-size: .85rem; }
@@ -58,8 +61,8 @@ body.landing #banner, body.is-mobile.landing #banner {
 .stats > div { border-left: 2px solid var(--accent); padding-left: 1.5rem; }
 .stats strong { display: block; font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 400; line-height: 1.4; }
 .stats span { color: var(--muted); }
-.travel-story { display: grid; grid-template-columns: 1fr 1.3fr; gap: 3rem; }
-.travel-story h3 { line-height: 1.7; }
+.stats p { color: var(--accent); font-size: .85rem; line-height: 1.6; margin: 1.25rem 0 0; }
+.travel-story { max-width: 52rem; }
 .travel-story p { color: var(--muted); }
 .international-gallery { margin-top: 2rem; }
 .gallery-note { color: var(--muted); font-size: .85rem; }
@@ -100,7 +103,7 @@ body.landing #footer { background: #10212a; padding: 3rem 1.5rem; }
 @media (max-width: 736px) {
  .wrapper { padding: 4rem 0 2rem; }
  .wrapper > .inner, #banner .inner { width: calc(100% - 3rem); }
- .split, .career, .travel-story { grid-template-columns: 1fr; gap: .5rem; }
+ .split, .career { grid-template-columns: 1fr; gap: .5rem; }
  #header .brand { left: 1.5rem; }
  #header nav > ul > li > a.menuToggle { padding: 0 1.2rem; }
  #banner { padding: 25rem 0 3rem; min-height: 0; }
@@ -116,7 +119,7 @@ body.landing #footer { background: #10212a; padding: 3rem 1.5rem; }
  #banner .actions { flex-direction: column; gap: .75rem; margin-left: 0; }
  #banner .actions li { padding: 0; width: 100%; }
  #banner .actions .button { display: block; }
- .stats { gap: 1rem; }
+ .stats { grid-template-columns: 1fr; gap: 2rem; }
  .stats > div { padding-left: 1rem; }
  .stats strong { font-size: 2rem; }
  .stats span { font-size: .85rem; }
