@@ -48,6 +48,10 @@ body.landing #banner, body.is-mobile.landing #banner {
 .career h3 { font-size: 1.8rem; margin: .4rem 0; }
 .period, .role { color: var(--muted); font-size: .85rem; }
 .career .period { margin-bottom: 1rem; }
+.career .role { margin-bottom: 1.25rem; }
+.company-logo { display: flex; align-items: center; justify-content: center; width: fit-content; max-width: 100%; padding: 10px; margin-bottom: 1.5rem; background: #fff; border-radius: 5px; }
+.company-logo img { display: block; width: auto; height: auto; max-width: 100%; max-height: 110px; object-fit: contain; }
+.company-logo--assist-card img { max-height: 130px; }
 .career li { padding-left: .4rem; margin-bottom: .65rem; color: var(--muted); }
 .international.wrapper { background: var(--deep); }
 .stats { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 3rem; }
