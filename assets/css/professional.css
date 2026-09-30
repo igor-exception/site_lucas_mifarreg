@@ -43,9 +43,9 @@ body.landing #banner, body.is-mobile.landing #banner {
 #banner:after { display: none; }
 .button, button { font-family: inherit; letter-spacing: .07em; font-size: .7rem; height: auto; min-height: 3rem; line-height: 1.5; padding: 1rem 1.5rem; white-space: normal; }
 .button.primary { background: var(--accent); color: var(--deep); box-shadow: none; }
-#banner .button.primary { background-color: var(--accent); color: var(--deep) !important; transition: background-color .2s ease, color .2s ease; }
-#banner .button.primary:hover { background-color: #d2f1e6 !important; color: var(--deep) !important; }
+#banner .button.primary { background-color: var(--accent); color: var(--deep) !important; transition: background-color .2s ease, border-color .2s ease, color .2s ease; }
 #banner .button.primary:active { background-color: #a9d7c8 !important; color: var(--deep) !important; }
+#banner .button.primary:hover, #banner .button.primary:focus-visible { background-color: #c94b4b !important; border-color: #c94b4b; color: #fff !important; }
 #banner .button.primary:focus-visible { outline-color: #fff !important; outline-offset: 5px; }
 .career { display: grid; grid-template-columns: 1fr 1.65fr; gap: 4rem; border-top: 1px solid #ffffff26; padding: 2.6rem 0 1rem; }
 .career h3 { font-size: 1.8rem; margin: .4rem 0; }
